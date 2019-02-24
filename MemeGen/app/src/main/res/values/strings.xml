@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">MemeG</string>
+    <string name="hello_blank_fragment">MemeG</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_home">Выберите шаблон</string>
+    <string name="title_dashboard">Введите текст</string>
+    <string name="title_notifications">Получите мем</string>
+</resources>

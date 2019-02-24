@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical"
+    tools:context="com.memedev.memeg.GaleryActivity">
+
+    <!--<RelativeLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="35dp">-->
+
+        <!--<Button-->
+            <!--android:id="@+id/firstEven"-->
+            <!--android:layout_width="30dp"-->
+            <!--android:layout_height="30dp"-->
+            <!--android:layout_alignParentBottom="true"-->
+            <!--android:layout_alignParentLeft="true"-->
+            <!--android:layout_alignParentStart="true"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:layout_marginLeft="41dp"-->
+            <!--android:layout_marginStart="41dp"-->
+            <!--android:background="@drawable/rounded_button"-->
+            <!--android:onClick="addImage"-->
+            <!--android:padding="10dp"-->
+            <!--android:text="1"-->
+            <!--android:textColor="#ffff" />-->
+
+
+        <!--<Button-->
+            <!--android:id="@+id/secondEven"-->
+            <!--android:layout_width="30dp"-->
+            <!--android:layout_height="30dp"-->
+            <!--android:layout_alignParentBottom="true"-->
+            <!--android:layout_centerHorizontal="true"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:background="@drawable/rounded_button"-->
+            <!--android:onClick="addImage"-->
+            <!--android:padding="10dp"-->
+            <!--android:text="2"-->
+            <!--android:textColor="#ffff" />-->
+
+        <!--<Button-->
+            <!--android:id="@+id/thirdEven"-->
+            <!--android:layout_width="30dp"-->
+            <!--android:layout_height="30dp"-->
+            <!--android:layout_alignParentBottom="true"-->
+            <!--android:layout_alignParentEnd="true"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:layout_marginEnd="42dp"-->
+            <!--android:layout_marginRight="42dp"-->
+            <!--android:background="@drawable/rounded_button"-->
+            <!--android:onClick="addImage"-->
+            <!--android:padding="10dp"-->
+            <!--android:text="3"-->
+            <!--android:textColor="#ffff" />-->
+
+        <!--&lt;!&ndash;<Button&ndash;&gt;-->
+            <!--&lt;!&ndash;android:id="@+id/addButton"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_width="50dp"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_height="50dp"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_alignParentTop="true"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_centerHorizontal="true"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_gravity="center"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:background="@drawable/rounded_button"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:onClick="addImage"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:padding="10dp"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:text="+"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:textColor="#ffff" />&ndash;&gt;-->
+
+    <!--</RelativeLayout>-->
+
+
+    <!--<RelativeLayout-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="10">-->
+
+        <!--<include layout="@layout/toolbar" />-->
+
+        <!--<ImageView-->
+            <!--android:id="@+id/free"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="300dp"-->
+            <!--android:layout_alignParentBottom="true"-->
+            <!--android:layout_alignParentStart="true" />-->
+        <!--&lt;!&ndash;<ImageButton&ndash;&gt;-->
+            <!--&lt;!&ndash;android:id="@+id/addButton"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_height="match_parent"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:src="@drawable/add1"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:background="#cc202020"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:onClick="addImage"/>&ndash;&gt;-->
+
+
+
+    <!--</RelativeLayout>-->
+    <RelativeLayout
+        android:id="@+id/lay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerview_id"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:background="#fff"
+            android:scrollbars="vertical">
+
+        </android.support.v7.widget.RecyclerView>
+
+        <!--<android.support.design.widget.BottomNavigationView-->
+            <!--android:id="@+id/navigation"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginEnd="0dp"-->
+            <!--android:layout_marginStart="0dp"-->
+            <!--android:layout_alignBottom="@id/recyclerview_id"-->
+            <!--android:background="?android:attr/windowBackground"-->
+            <!--app:layout_constraintBottom_toBottomOf="parent"-->
+            <!--app:layout_constraintLeft_toLeftOf="parent"-->
+            <!--app:layout_constraintRight_toRightOf="parent"-->
+            <!--app:menu="@menu/navigation" />-->
+
+    </RelativeLayout>
+</LinearLayout>

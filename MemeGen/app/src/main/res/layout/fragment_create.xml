@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+
+
+    <!--<android.support.v4.widget.NestedScrollView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent">-->
+
+    <RelativeLayout
+        android:id="@+id/meme"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <include
+            layout="@layout/toolbar"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true" />
+
+
+        <!--<Button-->
+        <!--android:id="@+id/doneButton"-->
+        <!--android:layout_width="168dp"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentTop="true"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:background="@drawable/rounded_button"-->
+        <!--android:text="DONE"-->
+        <!--android:textColor="#ffff"-->
+        <!--android:layout_marginTop="106dp" />-->
+
+        <RelativeLayout
+            android:id="@+id/memeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="320dp"
+            android:layout_alignBottom="@+id/memeImage"
+            android:layout_centerHorizontal="true">
+
+
+            <ImageView
+                android:id="@+id/bookthumbnail"
+                android:layout_width="350dp"
+                android:layout_height="match_parent"
+                android:layout_below="@id/tryButton"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:background="#2d2d2d"
+                android:scaleType="centerCrop"
+
+                />
+
+            <TextView
+                android:id="@+id/memeTopText"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:cursorVisible="true"
+                android:text=""
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textSize="50dp" />
+
+            <TextView
+                android:id="@+id/memeBottomText"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:text=""
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textSize="50dp" />
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/tryButton"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/editTop"
+            android:layout_alignParentTop="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="66dp"
+            android:background="@drawable/rounded_button"
+            android:onClick="tryMeme"
+            android:padding="10dp"
+            android:text="TRY"
+            android:textColor="#ffff" />
+
+        <ImageView
+            android:id="@+id/memeImage"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@id/tryButton"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="111dp" />
+
+
+        <EditText
+            android:id="@+id/editTop"
+            android:layout_width="349dp"
+            android:layout_height="50dp"
+
+            android:layout_below="@+id/memeLayout"
+            android:layout_centerHorizontal="true"
+            android:background="#cc5181b8"
+            android:gravity="center_horizontal|center"
+            android:hint="Enter top meme text"
+            android:textColor="#fff"
+            android:selectAllOnFocus="false"
+            android:singleLine="false" />
+
+        <EditText
+            android:id="@+id/editBottom"
+            android:layout_width="349dp"
+            android:layout_height="50dp"
+            android:textColor="#fff"
+            android:layout_below="@+id/editTop"
+            android:layout_centerHorizontal="true"
+            android:background="#cc5181b8"
+            android:gravity="center"
+            android:hint="Enter bottom meme text" />
+
+
+        <Button
+            android:id="@+id/saveButton"
+            android:layout_width="168dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="66dp"
+            android:layout_toStartOf="@+id/tryButton"
+            android:background="@drawable/rounded_button"
+            android:onClick="SaveImage"
+            android:padding="10dp"
+            android:text="Save"
+            android:textColor="#ffff" />
+
+
+    </RelativeLayout>
+
+
+    <!--</android.support.v4.widget.NestedScrollView>-->
+
+
+
+</LinearLayout>
